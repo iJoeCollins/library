@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://developer.ijoe.co/library/JOECategories/co.ijoe.JOECategories.atom/20140309013859</id>
+    <id>http://developer.ijoe.co/library/JOECategories/co.ijoe.JOECategories.atom/20140309014931</id>
     <title type="text">JOECategories Documentation</title>
     <rights>Copyright © 2014 Joseph Collins. All rights reserved.</rights>
     <link rel="self" href="http://developer.ijoe.co/library/JOECategories/co.ijoe.JOECategories.atom"></link>
     <docset:publisherName>Joseph Collins</docset:publisherName>
     <docset:publisherID>co.ijoe.documentation</docset:publisherID>
-    <updated>2014-03-09T01:38:59-05:00</updated>
+    <updated>2014-03-09T01:49:31-05:00</updated>
     <entry>
         <id>tag:developer.ijoe.co,2014-03-09:co.ijoe.JOECategories/1.0.0</id>
         <title type="text">JOECategories Documentation</title>
-        <updated>2014-03-09T01:38:59-05:00</updated>
+        <updated>2014-03-09T01:49:31-05:00</updated>
         <content type="text">JOECategories Documentation (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http:/developer.ijoe.co/library/JOECategories/co.ijoe.JOECategories-1.0.0.xar" length="47263"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http:/developer.ijoe.co/library/JOECategories/co.ijoe.JOECategories-1.0.0.xar" length="47258"></link>
         <docset:identifier>co.ijoe.JOECategories</docset:identifier>
         <docset:version>1.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
