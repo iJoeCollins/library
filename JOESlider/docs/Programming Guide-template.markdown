@@ -1,5 +1,5 @@
-JOESlider Programming Guide
----------------------------
+Programming Guide
+-----------------
 
 Configure the slider using one of the included block methods. Most of the time
 you will probably want to use handleValueChanged:
