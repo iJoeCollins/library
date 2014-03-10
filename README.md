@@ -1,6 +1,6 @@
 Developer Reference Library
 ---------------------------
 
-[JOECategories](http://developer.ijoe.co/library/JOECategories) - This is a collection of Foundation and UIKit categories.
+[JOECategories](http://developer.ijoe.co/library/JOECategories) - A collection of Foundation and UIKit categories.
 
-[JOESlider](http://developer.ijoe.co/library/JOESlider) - This is a collection of useful subclasses for UISlider.
+[JOESlider](http://developer.ijoe.co/library/JOESlider) - A collection of useful subclasses for UISlider.
