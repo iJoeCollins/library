@@ -1,5 +1,5 @@
-Setup Guide
-===========
+JOESlider Setup Guide
+---------------------
 
 Open your terminal and run:
 
