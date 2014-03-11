@@ -28,6 +28,45 @@
 
 <p>This programming guide serves as a reference on how to go about using the included api.  It is divided into UIKit and Foundation categories and shows examples for each addition.</p>
 
+<h2>Table of Contents</h2>
+
+<p><a href="#Foundation">Foundation Categories</a></p>
+
+<p><a href="#UIKit">UIKit Categories</a></p>
+
+<p><a name="Foundation"></a></p>
+
+<h2>Foundation Categories</h2>
+
+<p>Contains:</p>
+
+<p><a href="#NSString">NSString+JOEAdditions</a></p>
+
+<p><a name="NSString"></a></p>
+
+<h2>NSString+JOEAdditions</h2>
+
+<h3>Dividing Strings</h3>
+
+<p>To create a new string from the receiver by removing characters in a set</p>
+
+<pre><code>NSString *cleanString = [@"$3.00" joe_stringByRemovingCharactersInSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]];
+</code></pre>
+
+<p>This turns $3.00 into its mantissa 300 with exponent -2. Great when working with currency and decimal numbers.</p>
+
+<h3>Replacing Substrings</h3>
+
+<p>To create a new string by replacing any characters in the given set with a passed string.</p>
+
+<pre><code>NSCharacterSet *set = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
+NSString *cleanString = [@"$3.00" joe_stringByReplacingCharactersInSet:set withString:@""];
+</code></pre>
+
+<p>The example above is actually doing what joe_stringByRemovingCharactersInSet does internally. Here however you can provide your own replacement string. So if you were to use @&ldquo;#&rdquo; then $3.00 would become #3#00</p>
+
+<p><a name="UIKit"></a></p>
+
 <h2>UIKit Categories</h2>
 
 <p>Contains:</p>
@@ -83,35 +122,6 @@ Now you just have to use:</p>
 
 <pre><code>ViewController *viewController = [UIViewController joe_controllerWithIdentifier:@"ViewController"];
 </code></pre>
-
-<h2>Foundation Categories</h2>
-
-<p>Contains:</p>
-
-<p><a href="#NSString">NSString+JOEAdditions</a></p>
-
-<p><a name="NSString"></a></p>
-
-<h2>NSString+JOEAdditions</h2>
-
-<h3>Dividing Strings</h3>
-
-<p>To create a new string from the receiver by removing characters in a set</p>
-
-<pre><code>NSString *cleanString = [@"$3.00" joe_stringByRemovingCharactersInSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]];
-</code></pre>
-
-<p>This turns $3.00 into its mantissa 300 with exponent -2. Great when working with currency and decimal numbers.</p>
-
-<h3>Replacing Substrings</h3>
-
-<p>To create a new string by replacing any characters in the given set with a passed string.</p>
-
-<pre><code>NSCharacterSet *set = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
-NSString *cleanString = [@"$3.00" joe_stringByReplacingCharactersInSet:set withString:@""];
-</code></pre>
-
-<p>The example above is actually doing what joe_stringByRemovingCharactersInSet does internally. Here however you can provide your own replacement string. So if you were to use @&ldquo;#&rdquo; then $3.00 would become #3#00</p>
 				</div>
 				<div id="footer">
 					<hr />
