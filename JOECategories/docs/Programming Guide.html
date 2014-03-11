@@ -28,9 +28,9 @@
 
 <h2>UIKit</h2>
 
-<h3>UIApplication+JOEAdditions</h3>
+<h2>UIApplication+JOEAdditions</h2>
 
-<h4>Checking if it is the first run</h4>
+<h3>Checking if it is the first run</h3>
 
 <p>Usually inside your application delegate.</p>
 
@@ -46,16 +46,16 @@
 }
 </code></pre>
 
-<h4>Ending the first run sequence</h4>
+<h3>Ending the first run sequence</h3>
 
 <p>You should call joe_endFirstRun at some point. This can be at the end of a tutorial, introduction, or setup process.</p>
 
 <pre><code>[[UIApplication sharedApplication] joe_endFirstRun];
 </code></pre>
 
-<h3>UIViewController+JOEAdditions</h3>
+<h2>UIViewController+JOEAdditions</h2>
 
-<h4>Get the initial view controller from a storyboard</h4>
+<h3>Get the initial view controller from a storyboard</h3>
 
 <p>This makes the app delegate a ton cleaner by factoring out boilerplate code.
 Now you just have to use:</p>
@@ -65,7 +65,7 @@ Now you just have to use:</p>
 
 <p><strong>Important:</strong> The methods dealing with storyboards use the default names. Either Main, Main_iPhone, or Main_iPad.</p>
 
-<h4>Initialize a view controller from a storyboard using its identifier</h4>
+<h3>Initialize a view controller from a storyboard using its identifier</h3>
 
 <p>Again this makes things cleaner by removing factoring out the boilerplate code.</p>
 
@@ -74,9 +74,9 @@ Now you just have to use:</p>
 
 <h2>Foundation</h2>
 
-<h3>NSString+JOEAdditions</h3>
+<h2>NSString+JOEAdditions</h2>
 
-<h4>Dividing Strings</h4>
+<h3>Dividing Strings</h3>
 
 <p>To create a new string from the receiver by removing characters in a set</p>
 
@@ -85,7 +85,7 @@ Now you just have to use:</p>
 
 <p>This turns $3.00 into its mantissa 300 with exponent -2. Great when working with currency and decimal numbers.</p>
 
-<h4>Replacing Substrings</h4>
+<h3>Replacing Substrings</h3>
 
 <p>To create a new string by replacing any characters in the given set with a passed string.</p>
 
