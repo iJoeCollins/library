@@ -1,0 +1,663 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JOECurrencyUtil Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">JOECurrencyUtil </a></h1>
+				<a id="developerHome" href="../index.html">Joseph Collins</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JOECurrencyUtil Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/cleanCurrencyString:">&nbsp;&nbsp;&nbsp;&nbsp;+ cleanCurrencyString:</option>
+	
+	<option value="//api/name/decimalNumberFromCurrencyString:">&nbsp;&nbsp;&nbsp;&nbsp;+ decimalNumberFromCurrencyString:</option>
+	
+	<option value="//api/name/decimalNumberFromCurrencyString:scale:">&nbsp;&nbsp;&nbsp;&nbsp;+ decimalNumberFromCurrencyString:scale:</option>
+	
+	<option value="//api/name/removableCharacterSet">&nbsp;&nbsp;&nbsp;&nbsp;+ removableCharacterSet</option>
+	
+	<option value="//api/name/stringFromDecimalNumber:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringFromDecimalNumber:</option>
+	
+	<option value="//api/name/stringFromDecimalNumber:scale:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringFromDecimalNumber:scale:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Decimal From Currency String">Decimal From Currency String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Currency String From Decimal Number">Currency String From Decimal Number</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Unformatting Text">Unformatting Text</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cleanCurrencyString:">cleanCurrencyString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decimalNumberFromCurrencyString:">decimalNumberFromCurrencyString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/decimalNumberFromCurrencyString:scale:">decimalNumberFromCurrencyString:scale:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removableCharacterSet">removableCharacterSet</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringFromDecimalNumber:">stringFromDecimalNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringFromDecimalNumber:scale:">stringFromDecimalNumber:scale:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JOECurrencyUtil Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JOECurrencyUtil Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JOECurrencyUtil.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>  This is a collection of utility methods for dealing with currency. It allows you to handle input into a textfield or similiar UI, formatting the number correctly.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Decimal From Currency String" name="task_Decimal From Currency String"></a>
+						<h3 class="subsubtitle task-title">Decimal From Currency String</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/decimalNumberFromCurrencyString:">+&nbsp;decimalNumberFromCurrencyString:</a></code>
+		<span class="tooltip"><p>Method converts a string formatted as currency to a decimal number object with a scale of 2.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/decimalNumberFromCurrencyString:scale:">+&nbsp;decimalNumberFromCurrencyString:scale:</a></code>
+		<span class="tooltip"><p>Method converts a string formatted as currency to a decimal number object with a given scale argument.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Currency String From Decimal Number" name="task_Currency String From Decimal Number"></a>
+						<h3 class="subsubtitle task-title">Currency String From Decimal Number</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringFromDecimalNumber:">+&nbsp;stringFromDecimalNumber:</a></code>
+		<span class="tooltip"><p>Method converts a decimal number to a string with 2 digits after its decimal point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringFromDecimalNumber:scale:">+&nbsp;stringFromDecimalNumber:scale:</a></code>
+		<span class="tooltip"><p>Method converts a decimal number to a string with a given scale.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Unformatting Text" name="task_Unformatting Text"></a>
+						<h3 class="subsubtitle task-title">Unformatting Text</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cleanCurrencyString:">+&nbsp;cleanCurrencyString:</a></code>
+		<span class="tooltip"><p>This method cleans a NSString representing currency.  It takes an inverted decimalDigitCharacterSet to remove currency symbols, commas, and decimals.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removableCharacterSet">+&nbsp;removableCharacterSet</a></code>
+		<span class="tooltip"><p>Returns a character set that includes everything but decimal digits and the current locale&rsquo;s decimal seperator.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cleanCurrencyString:" title="cleanCurrencyString:"></a>
+	<h3 class="subsubtitle method-title">cleanCurrencyString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method cleans a NSString representing currency.  It takes an inverted decimalDigitCharacterSet to remove currency symbols, commas, and decimals.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)cleanCurrencyString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The string to be cleaned.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting digit only string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOECurrencyUtil.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/decimalNumberFromCurrencyString:" title="decimalNumberFromCurrencyString:"></a>
+	<h3 class="subsubtitle method-title">decimalNumberFromCurrencyString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method converts a string formatted as currency to a decimal number object with a scale of 2.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>NSString argument to be converted to a decimal number</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting NSDecimalNumber object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@b Example: @"$10,545.32" -&gt; 10545.32
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOECurrencyUtil.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/decimalNumberFromCurrencyString:scale:" title="decimalNumberFromCurrencyString:scale:"></a>
+	<h3 class="subsubtitle method-title">decimalNumberFromCurrencyString:scale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method converts a string formatted as currency to a decimal number object with a given scale argument.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)<em>string</em> scale:(short)<em>scale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>NSString argument to be converted to a decimal number</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scale</em></dt>
+			<dd><p>The number of digits a rounded value should have after its decimal point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting NSDecimalNumber object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@b Example: Given scale:4, @"$0.0045" -&gt; 0.0045
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOECurrencyUtil.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removableCharacterSet" title="removableCharacterSet"></a>
+	<h3 class="subsubtitle method-title">removableCharacterSet</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a character set that includes everything but decimal digits and the current locale&rsquo;s decimal seperator.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSCharacterSet *)removableCharacterSet</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a character set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOECurrencyUtil.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringFromDecimalNumber:" title="stringFromDecimalNumber:"></a>
+	<h3 class="subsubtitle method-title">stringFromDecimalNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method converts a decimal number to a string with 2 digits after its decimal point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)<em>number</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>The NSDecimalNumber to be converted to a NSString</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting NSString.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOECurrencyUtil.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringFromDecimalNumber:scale:" title="stringFromDecimalNumber:scale:"></a>
+	<h3 class="subsubtitle method-title">stringFromDecimalNumber:scale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method converts a decimal number to a string with a given scale.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)<em>number</em> scale:(short)<em>scale</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>The NSDecimalNumber to be converted to a NSString</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scale</em></dt>
+			<dd><p>The number of digits a rounded value should have after its decimal point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting NSString.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOECurrencyUtil.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Joseph Collins. All rights reserved. (Last updated: 2014-03-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
