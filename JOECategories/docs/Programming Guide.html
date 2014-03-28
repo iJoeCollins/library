@@ -111,7 +111,7 @@ NSString *cleanString = [@"$3.00" joe_stringByReplacingCharactersInSet:set withS
 <p>This makes the app delegate a ton cleaner by factoring out boilerplate code.
 Now you just have to use:</p>
 
-<pre><code>ViewController *viewController = [UIViewController joe_initialController];
+<pre><code>ViewController *viewController = [ViewController joe_initialViewController];
 </code></pre>
 
 <p><strong>Important:</strong> The methods dealing with storyboards use the default names. Either Main, Main_iPhone, or Main_iPad.</p>
@@ -120,7 +120,7 @@ Now you just have to use:</p>
 
 <p>Again this makes things cleaner by removing factoring out the boilerplate code.</p>
 
-<pre><code>ViewController *viewController = [UIViewController joe_controllerWithIdentifier:@"ViewController"];
+<pre><code>ViewController *viewController = [UIViewController joe_viewControllerWithIdentifier:@"ViewController"];
 </code></pre>
 				</div>
 				<div id="footer">

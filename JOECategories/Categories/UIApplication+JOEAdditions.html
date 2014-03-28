@@ -47,6 +47,8 @@
 	
 	<option value="//api/name/joe_isFirstRun">&nbsp;&nbsp;&nbsp;&nbsp;- joe_isFirstRun</option>
 	
+	<option value="//api/name/joe_resetFirstRun">&nbsp;&nbsp;&nbsp;&nbsp;- joe_resetFirstRun</option>
+	
 	
 	
 </select>
@@ -80,6 +82,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_endFirstRun">joe_endFirstRun</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_isFirstRun">joe_isFirstRun</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_resetFirstRun">joe_resetFirstRun</a></span></li>
 	
 </ul></li>
 
@@ -143,6 +147,13 @@
 		<code><a href="#//api/name/joe_endFirstRun">&ndash;&nbsp;joe_endFirstRun</a></code>
 		<span class="tooltip"><p>It checks if it is the first run, and then sets a first run key
     and synchronizes the application defaults.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joe_resetFirstRun">&ndash;&nbsp;joe_resetFirstRun</a></code>
+		<span class="tooltip"><p>Checks if the first run key is present and removes it.</p></span>
 	</span>
 	
 	
@@ -231,6 +242,47 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIApplication+JOEAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joe_resetFirstRun" title="joe_resetFirstRun"></a>
+	<h3 class="subsubtitle method-title">joe_resetFirstRun</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if the first run key is present and removes it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)joe_resetFirstRun</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method can be called by the user to bring back any intro material to view on launch.</p>
+	</div>
 	
 	
 	

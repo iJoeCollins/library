@@ -41,9 +41,9 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/joe_controllerWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ joe_controllerWithIdentifier:</option>
+	<option value="//api/name/joe_initialViewController">&nbsp;&nbsp;&nbsp;&nbsp;+ joe_initialViewController</option>
 	
-	<option value="//api/name/joe_initialController">&nbsp;&nbsp;&nbsp;&nbsp;+ joe_initialController</option>
+	<option value="//api/name/joe_viewControllerWithIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ joe_viewControllerWithIdentifier:</option>
 	
 	
 	
@@ -75,9 +75,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_controllerWithIdentifier:">joe_controllerWithIdentifier:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_initialViewController">joe_initialViewController</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_initialController">joe_initialController</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joe_viewControllerWithIdentifier:">joe_viewControllerWithIdentifier:</a></span></li>
 	
 </ul></li>
 
@@ -133,14 +133,14 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/joe_initialController">+&nbsp;joe_initialController</a></code>
+		<code><a href="#//api/name/joe_initialViewController">+&nbsp;joe_initialViewController</a></code>
 		<span class="tooltip"><p>This method grabs an instance of the initial view controller set in a storyboard.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/joe_controllerWithIdentifier:">+&nbsp;joe_controllerWithIdentifier:</a></code>
+		<code><a href="#//api/name/joe_viewControllerWithIdentifier:">+&nbsp;joe_viewControllerWithIdentifier:</a></code>
 		<span class="tooltip"><p>This method grabs an instance of the controller with the passed in identifier set in a storyboard.</p></span>
 	</span>
 	
@@ -161,36 +161,26 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/joe_controllerWithIdentifier:" title="joe_controllerWithIdentifier:"></a>
-	<h3 class="subsubtitle method-title">joe_controllerWithIdentifier:</h3>
+	<a name="//api/name/joe_initialViewController" title="joe_initialViewController"></a>
+	<h3 class="subsubtitle method-title">joe_initialViewController</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method grabs an instance of the controller with the passed in identifier set in a storyboard.</p>
+		<p>This method grabs an instance of the initial view controller set in a storyboard.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)joe_controllerWithIdentifier:(NSString *)<em>identifier</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)joe_initialViewController</code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>identifier</em></dt>
-			<dd><p>The identifier value set in Interface Builder.</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns an instance of the controller with the passed in identifier.</p>
+		<p>Returns an instance of the initial view controller.</p>
 	</div>
 	
 	
@@ -212,26 +202,36 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/joe_initialController" title="joe_initialController"></a>
-	<h3 class="subsubtitle method-title">joe_initialController</h3>
+	<a name="//api/name/joe_viewControllerWithIdentifier:" title="joe_viewControllerWithIdentifier:"></a>
+	<h3 class="subsubtitle method-title">joe_viewControllerWithIdentifier:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method grabs an instance of the initial view controller set in a storyboard.</p>
+		<p>This method grabs an instance of the controller with the passed in identifier set in a storyboard.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (instancetype)joe_initialController</code></div>
+	<div class="method-subsection method-declaration"><code>+ (instancetype)joe_viewControllerWithIdentifier:(NSString *)<em>identifier</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>identifier</em></dt>
+			<dd><p>The identifier value set in Interface Builder.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns an instance of the initial view controller.</p>
+		<p>Returns an instance of the controller with the passed in identifier.</p>
 	</div>
 	
 	
