@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://developer.ijoe.co/library/JOEMath/JOEMath.atom/20140405140000</id>
+    <id>http://developer.ijoe.co/library/JOEMath/JOEMath.atom/20140405141303</id>
     <title type="text">JOEMath Documentation</title>
     <rights>Copyright © 2014 Joseph Collins. All rights reserved.</rights>
     <link rel="self" href="http://developer.ijoe.co/library/JOEMath/JOEMath.atom"></link>
     <docset:publisherName>Joseph Collins</docset:publisherName>
     <docset:publisherID>co.ijoe.documentation</docset:publisherID>
-    <updated>2014-04-05T14:00:00-04:00</updated>
+    <updated>2014-04-05T14:13:03-04:00</updated>
     <entry>
         <id>tag:developer.ijoe.co,2014-04-05:co.ijoe.JOEMath/0.1.0</id>
         <title type="text">JOEMath Documentation</title>
-        <updated>2014-04-05T14:00:00-04:00</updated>
+        <updated>2014-04-05T14:13:03-04:00</updated>
         <content type="text">JOEMath Documentation (v0.1.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http:/developer.ijoe.co/library/JOEMath/co.ijoe.JOEMath-0.1.0.xar" length="40710"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http:/developer.ijoe.co/library/JOEMath/co.ijoe.JOEMath-0.1.0.xar" length="40555"></link>
         <docset:identifier>co.ijoe.JOEMath</docset:identifier>
         <docset:version>0.1.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
