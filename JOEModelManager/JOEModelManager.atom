@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://developer.ijoe.co/library/JOEModelManager/JOEModelManager.atom/20140406142122</id>
+    <title type="text">JOEModelManager Documentation</title>
+    <rights>Copyright © 2014 Joseph Collins. All rights reserved.</rights>
+    <link rel="self" href="http://developer.ijoe.co/library/JOEModelManager/JOEModelManager.atom"></link>
+    <docset:publisherName>Joseph Collins</docset:publisherName>
+    <docset:publisherID>co.ijoe.documentation</docset:publisherID>
+    <updated>2014-04-06T14:21:22-04:00</updated>
+    <entry>
+        <id>tag:developer.ijoe.co,2014-04-06:co.ijoe.JOEModelManager/0.1.0</id>
+        <title type="text">JOEModelManager Documentation</title>
+        <updated>2014-04-06T14:21:22-04:00</updated>
+        <content type="text">JOEModelManager Documentation (v0.1.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http:/developer.ijoe.co/library/JOEModelManager/co.ijoe.JOEModelManager-0.1.0.xar" length="43690"></link>
+        <docset:identifier>co.ijoe.JOEModelManager</docset:identifier>
+        <docset:version>0.1.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>
