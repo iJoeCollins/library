@@ -9,4 +9,6 @@ Developer Reference Library
 
 [JOEMath](http://developer.ijoe.co/library/JOEMath) - A growing collection of simple to complex mathematical operations.
 
+[JOEModelManager](http://developer.ijoe.co/library/JOEModelManager) = Simple data storage manager using NSCoding for persistance to disk.
+
 [JOESlider](http://developer.ijoe.co/library/JOESlider) - A collection of useful subclasses for UISlider.
